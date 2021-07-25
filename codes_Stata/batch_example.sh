@@ -1,21 +1,23 @@
 #!/bin/bash -l 
 
-# Set the run time limit for the job. The default is 12 hours.
+# "Set the run time limit for the job. The default is 12 hours.
 # There is no advantage in queue scheduling when requesting
-# <12 hours, but as an example this job is set to have a 2 hour
-# limit. 
+# <12 hours, but as an example this job is set to have a 2 hour limit." 
+
 #$ -l h_rt=2:00:00
 
-# Email yourself when the job finishes.
+# "Email yourself when the job finishes."
+
 #$ -m e
 
-# Join the console output and error files. This is optional.
+# "Join the console output and error files. This is optional."
+
 #$ -j y 
 
-# Give the job a name, the console output file will be named
-# econ_stata_demo.oXYZ where XYZ is the job number.
-#$ -N econ_stata_demo
+# "Give the job a name, the console output file will be named
+# econ_stata_demo.oXYZ where XYZ is the job number."
 
+#$ -N econ_Stata_demo
 
 echo "==========================================================" 
 echo "Starting on : $(date)"
