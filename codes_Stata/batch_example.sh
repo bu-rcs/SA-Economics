@@ -28,9 +28,9 @@ echo "Current job name : $JOB_NAME"
 echo "Task index number : $SGE_TASK_ID"
 echo "==========================================================" 
 
-# Run this command to see the available versions of stata:
+# "Run this command to see the available versions of stata:
 #    module avail stata
-# stata/17 and stata-se/17 are the same thing - single core STATA.
+# stata/17 and stata-se/17 are the same thing - single core STATA."
 module load stata/17
 
 stata -b do do_example.do
