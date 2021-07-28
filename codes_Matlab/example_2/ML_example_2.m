@@ -37,17 +37,21 @@ profitVec = profit(kVec);
 vNew = profitVec/(1-beta);
 v    = vNew-1;
 
+matlabpool open 4
 % Fixed point algorithm
 for i = 1:1000
-    if max(abs(vNew-v))< 1e-7;
-        fprintf('convergence at %5.0f \n iterations',i);
+    if max(abs(vNew-v))< 1e-6;
+    %    fprintf('convergence at %5.0f \n iterations',i);
         break;
     end
     v    = vNew;
-    vNew = getVnew(v,profitVec,investmentCost,beta,transMatInvest,transMatNoInvest);
+    parfor j=1:40
+        vNew(j) = getVnew(v,profitVec(j),investmentCost,beta,transMatInvest(j,:),transMatNoInvest(j,:));
+    end
 end
+matlabpool close
 
 % Now graph the probability of investment at each level of capital
 probInvestment = exp(profitVec-investmentCost+beta*transMatInvest*v)./exp(v);
 plot(kVec,probInvestment);
-saveas(gcf,'figure.png')
+saveas(gcf,'figure2.png')
