@@ -30,7 +30,7 @@ echo "=========================================================="
 
 module load R
 
-R --vanilla < gmm_example.R > $JOB_NAME_$JOB_ID.Rout
+R --vanilla < gmm_example.R > output_$JOB_NAME_$JOB_ID.Rout
 
 echo "=========================================================="
 echo "Finished on : $(date)"
