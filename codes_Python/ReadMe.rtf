@@ -1,4 +1,4 @@
-This file demonstrate the steps on how to use Python on clusters
+This file demonstrates the steps on how to use Python on clusters with an example of web scraping
 
 1). Log onto scc through your terminal with codes: ssh Your_Name@scc1.bu.edu
 
@@ -7,3 +7,10 @@ This file demonstrate the steps on how to use Python on clusters
 3). Run your batch with codes: qsub -P econdept batch_example.sh
 
 4). You will receive an example when your task is done. Check your folder with the log file and other documents you chose to export
+
+-----------------------------------------------------------------------------
+Information on the web scraping example:
+
+1). This Python script scrapes the job information listed on an experimental website: https://realpython.github.io/fake-jobs/
+
+2). The codes collect three pieces of information on each job list: job title, hirer, and job location and save them into a cvs file
