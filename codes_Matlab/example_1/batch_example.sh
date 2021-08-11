@@ -30,7 +30,11 @@ echo "=========================================================="
 
 module load matlab/2020b
 
-matlab -singleCompThread -nodisplay -r ML_example_1.m
+# This will run file ML_example_1.m (However - don't use the .m file extension in the command.)
+matlab -singleCompThread -nodisplay -batch ML_example_1
+
+# (If you were using Matlab older than 2018b the -batch flag does not exist so you'd use:)
+# matlab -singleCompThread -nodisplay -r "ML_example_1 ; exit "
 
 echo "=========================================================="
 echo "Finished on : $(date)"
