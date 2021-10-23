@@ -1,6 +1,6 @@
 # SA-Economics
 
-**Student Ambassador**: Liqun Zhuge 
+**Current Student Ambassador**: Liqun Zhuge 
 
 **Contact**:
 
