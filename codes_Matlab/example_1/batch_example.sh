@@ -30,7 +30,8 @@ echo "=========================================================="
 
 module load matlab/2020b
 
-matlab -singleCompThread -nodisplay -r ML_example_1.m
+matlab -singleCompThread -nodisplay -batch ML_example_1
+# matlab -singleCompThread -nodisplay -r "ML_example_1 ; exit"
 
 echo "=========================================================="
 echo "Finished on : $(date)"
