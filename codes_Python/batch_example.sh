@@ -32,7 +32,11 @@ echo "=========================================================="
 module load python3/3.7.7
 
 # Run the Python script.
+<<<<<<< HEAD
 python3 webscrap.py
+=======
+python webscrap.py
+>>>>>>> 90aa07745da27992b616dee79b05abdfdf0a447e
 
 echo "=========================================================="
 echo "Finished on : $(date)"
