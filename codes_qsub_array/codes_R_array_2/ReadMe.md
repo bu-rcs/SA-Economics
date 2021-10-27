@@ -1,6 +1,9 @@
 This file demonstrate the steps on how to use `array` to more efficiently submit several batches at one time (with a R example)
 
-**Purpose**: when you have multiple code files and need to submit all of them; instead of submitting many batch files, use `array` to submit just once. 
+**Purpose**: 
+When you have multiple code files and need to submit all of them; instead of submitting many batch files, use `array` to submit just once. 
+
+In this example, you have gmm_example_1.r ... gmm_example_4.r and you want to submit all of them at once.
 
 1). Log onto scc through your terminal with codes: ssh Your_Name@scc1.bu.edu
 
