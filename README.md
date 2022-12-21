@@ -1,11 +1,13 @@
-# SA-Economics
+In an OnDemand Desktop session...
 
-**Current Student Ambassador**: Liqun Zhuge 
+Open a terminal window. Render the pages:
 
-**Contact**:
+module load mkdocs
 
-Email: rcs_sa_econ@scc.bu.edu
+mkdocs server
 
-Check out the Wiki for Economics tutorials and guides for BU students
+Then run firefox for whatever address mkdocs prints:
 
-Available software on the SCC: http://sccsvc.bu.edu/software/#/
+firefox http://localhost:8000 &
+
+
